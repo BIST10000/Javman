@@ -17,16 +17,16 @@ public class ArrayHelper {
         }
     }
 
-    public static void addToEnd(int[] arr, int num) {
+    public static int[] addToEnd(int[] arr, int num) {
         int[] arr2 = new int[arr.length + 1];
         for (int i = 0; i < arr.length; i++) {
             arr2[i] = arr[i];
         }
         arr2[arr2.length - 1] = num;
-        System.out.println(Arrays.toString(arr2));
+        return arr2;
     }
 
-    public static void addToIndex(int[] arr, int indx, int num) {
+    public static int[] addToIndex(int[] arr, int indx, int num) {
         int[] arr2 = new int[arr.length + 1];
         for (int i = 0; i < indx; i++) {
             arr2[i] = arr[i];
@@ -35,7 +35,7 @@ public class ArrayHelper {
         for (int i = indx + 1; i < arr2.length; i++) {
             arr2[i] = arr[i - 1];
         }
-        System.out.println(Arrays.toString(arr2));
+        return arr2;
     }
 
 

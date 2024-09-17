@@ -8,7 +8,8 @@ public class Main {
         ArrayHelper.positiveNum(arr1);
         System.out.println(Arrays.toString(arr1));
         System.out.println(ArrayHelper.summa(arr1));
-        ArrayHelper.addToEnd(arr1, 12);
-        ArrayHelper.addToIndex(arr1, 4, 999);
+        arr1 = ArrayHelper.addToEnd(arr1,5);
+        arr1 = ArrayHelper.addToIndex(arr1, 4, 999);
+        System.out.println(Arrays.toString(arr1));
     }
 }
